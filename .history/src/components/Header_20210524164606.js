@@ -28,19 +28,13 @@ function Header() {
           <SearchIcon className="h-12 p-4" />
         </div>
         {/* Right */}
-        <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-          <div className="link">
+        <div className="text-white">
+          <div>
             <p>Hello Javaid Khan</p>
-            <p>Account & Lists</p>
+            <p>Acooutn & Lists</p>
           </div>
-          <div className="link">
-            <p>Returns</p>
-            <p>& Orders</p>
-          </div>
-          <div className="link">
-            <ShoppingCartIcon className="h-10" />
-            <p>Basket</p>
-          </div>
+          <div></div>
+          <div></div>
         </div>
       </div>
       {/* Bottom nav */}
