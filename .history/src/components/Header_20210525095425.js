@@ -39,7 +39,7 @@ function Header() {
           </div>
           <div className="realtive link flex items-center">
             <ShoppingCartIcon className="h-10" />
-            <p className="hidden md:inline font-extrabold md:text-sm mt-2">Basket</p>
+            <p className="hidden font-extrabold md:text-sm">Basket</p>
           </div>
         </div>
       </div>

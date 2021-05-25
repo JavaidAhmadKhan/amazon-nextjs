@@ -31,15 +31,15 @@ function Header() {
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
           <div className="link">
             <p>Hello Javaid Khan</p>
-            <p className="font-extrabold md:text-sm">Account & Lists</p>
+            <p className="font-extrabold">Account & Lists</p>
           </div>
           <div className="link">
             <p>Returns</p>
-            <p className="font-extrabold md:text-sm">& Orders</p>
+            <p className="font-extrabold">& Orders</p>
           </div>
-          <div className="realtive link flex items-center">
+          <div className="link">
             <ShoppingCartIcon className="h-10" />
-            <p className="hidden md:inline font-extrabold md:text-sm mt-2">Basket</p>
+            <p className="font-extrabold">Basket</p>
           </div>
         </div>
       </div>

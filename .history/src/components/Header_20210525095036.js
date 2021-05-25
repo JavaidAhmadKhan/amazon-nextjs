@@ -37,9 +37,9 @@ function Header() {
             <p>Returns</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
-          <div className="realtive link flex items-center">
+          <div className="link">
             <ShoppingCartIcon className="h-10" />
-            <p className="hidden md:inline font-extrabold md:text-sm mt-2">Basket</p>
+            <p className="font-extrabold md:text-sm">Basket</p>
           </div>
         </div>
       </div>
