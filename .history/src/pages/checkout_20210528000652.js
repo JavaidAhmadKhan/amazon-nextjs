@@ -9,7 +9,7 @@ import { useSession } from "next-auth/client";
 function checkout() {
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
-  const [session] = useSession();
+  const session = useSession();
   return (
     <div className="bg-gray-100">
       <Header />
@@ -55,7 +55,7 @@ function checkout() {
               </h2>
               <button
                 disabled={!session}
-                className={`button mt-2 ${
+                className={` mt-2 ${
                   !session &&
                   "from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed"
                 }`}

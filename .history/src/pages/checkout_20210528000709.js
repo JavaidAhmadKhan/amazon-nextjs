@@ -9,7 +9,7 @@ import { useSession } from "next-auth/client";
 function checkout() {
   const items = useSelector(selectItems);
   const total = useSelector(selectTotal);
-  const [session] = useSession();
+  const session = useSession();
   return (
     <div className="bg-gray-100">
       <Header />
