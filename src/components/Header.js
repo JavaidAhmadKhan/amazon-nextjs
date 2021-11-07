@@ -17,14 +17,13 @@ function Header() {
     <header className="sticky top-0 left-0 right-0 z-50">
       {/* Top nav */}
       <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2 ">
-        <div className="mt-2 flex items-center flex-grow sm:flex-grow-0 ">
+        <div className="mt-2 flex items-center flex-grow sm:flex-grow-0 cursor-pointer">
           <Image
             onClick={() => router.push("/")}
             src="https://links.papareact.com/f90"
             width={150}
             height={40}
             objectFit="contain"
-            cursor-pointer
           />
         </div>
         {/* Search */}
@@ -47,7 +46,10 @@ function Header() {
             </p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
-          <div className="cursor-pointer link">
+          <div
+            onClick={() => session && router.push("/orders")}
+            className="cursor-pointer link"
+          >
             <p>Returns</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
@@ -66,14 +68,14 @@ function Header() {
         </div>
       </div>
       {/* Bottom nav */}
-      <div className="flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm">
-        <p className="link flex items-center">
-          <MenuIcon className="h-6 mr-1" />
+      <div className="hidden md:flex lg:flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm">
+        <p className="hidden md:flex lg:flex link  items-center">
+          <MenuIcon className=" hidden md:flex xl:flex h-6 mr-1" />
           All
         </p>
-        <p className="link">Prime Video</p>
-        <p className="link">Amazon Business</p>
-        <p className="link">Today's Deals</p>
+        <p className="link hidden md:flex lg:flex">Prime Video</p>
+        <p className="link hidden md:flex lg:flex">Amazon Business</p>
+        <p className="link hidden md:flex lg:flex">Today's Deals</p>
         <p className="link hidden lg:inline-flex">Electronics</p>
         <p className="link hidden lg:inline-flex">Food & Grocery</p>
         <p className="link hidden lg:inline-flex">Prime</p>
