@@ -8,6 +8,7 @@ import { useSession } from "next-auth/client";
 import axios from "axios";
 import { loadStripe } from "@stripe/stripe-js";
 
+// Stripe
 const stripePromise = loadStripe(process.env.stripe_public_key);
 
 function checkout() {
