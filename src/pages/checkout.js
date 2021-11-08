@@ -34,6 +34,7 @@ function checkout() {
 
   return (
     <div className="bg-gray-100">
+      {/* Header import here */}
       <Header />
       <main className="lg:flex max-w-screen-2xl mx-auto">
         {/* Left */}
